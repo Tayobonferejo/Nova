@@ -560,4 +560,57 @@ div h5 {
 
 #FAQ-section {
     background-color: #fbfbfc;
+    padding: 5rem 0;
+}
+
+#FAQ {
+    width: 60%;
+    margin: auto;
+}
+
+#FAQ > div:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    margin-bottom: 1rem;
+
+}
+
+#FAQ > div:first-child > p{
+   text-align: center;
+}
+
+.question > div {
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+    border-radius: 5px 5px 0px 0px;
+    border: 2px solid black;
+}
+
+ .questionLine {
+    display: flex;
+    justify-content: space-between;
+ }
+
+.question > div , .question > p {
+    padding: 1rem;
+    background-color: #ffffff;
+    color: #585a69;
+    border: 2px solid black;
+}
+
+.question > p {
+    border-radius: 0px 0px 5px 5px;
+    border: 2px solid black;
+}
+
+.question {
+    padding-bottom: 0.8rem;
+    line-height: 1.5;
+}
+
+.hiddenfaq {
+    display: none;
 }
