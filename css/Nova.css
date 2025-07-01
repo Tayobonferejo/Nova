@@ -488,7 +488,7 @@ div h5 {
     margin-bottom: 2rem;
 }
 
-#Testimonials-heading{
+#Testimonials-heading, .center-headline{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -613,4 +613,74 @@ div h5 {
 
 .hiddenfaq {
     display: none;
+}
+
+/* form Styling */
+
+input, label, button {
+    display: block;
+}
+
+#form-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#form-section > :first-child {
+    width: 50%;
+}
+
+#form-section > :last-child {
+    width: 50%;
+}
+
+#form-section > :first-child > div {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.contact-icon {
+    border: 1px solid rgb(130, 235, 160);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-icon > i {
+    color: #494B5B;
+    font-size: 15px;
+}
+
+#contain-div {
+    padding: 2rem 0;
+}
+
+.contact-text > h4{
+    padding-top: 0.3rem;
+    color: #215c5c;
+}
+
+#form input, #form textarea {
+    width: 100%;
+    height: 40px;
+    margin: 0.4rem 0 0.7rem 0;
+}
+
+#form textarea {
+    height: 90px;
+    padding: 0.5rem;
+}
+
+#form button {
+    width: 130px;
+    height: 50px;
+    background-color: #215c5c;
+    font-size: 1rem;
+    color: white;
+    border-radius: 5px;
 }
