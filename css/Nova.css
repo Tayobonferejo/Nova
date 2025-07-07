@@ -13,12 +13,14 @@ header {
     border-bottom: 1px solid rgba(128, 128, 128, 0.611);
 }
 
-nav,ul {
+nav, header ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
+#hamburger {
+    display: none;
+}
 nav li {
     list-style-type: none;
     padding: 0 0.7rem;
@@ -33,11 +35,6 @@ nav li {
 nav {
     height: 80px;
 }
-
-ul {
-    width: 50%;
-}
-
 /* Button Styling start */
 
 .button a,
@@ -84,6 +81,7 @@ ul {
 #business-Logo, .main-section > div
 {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -135,8 +133,8 @@ ul {
 }
 
 #About-Container img {
-    width: 526px;
-    height: 351px;
+    width: 32.875rem;
+    height: 21.9375rem;
     border-radius: 5px;
 }
 
@@ -390,6 +388,7 @@ div h5 {
 }
 #fifth-section > div:nth-child(2) > div > div{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     width: 80px;
@@ -418,6 +417,7 @@ div h5 {
 } */
 .stat  {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     background-color: #215C5C;
@@ -508,6 +508,7 @@ div h5 {
 
 .Testimonials-flex{
     display: flex;
+    flex-wrap: wrap;
     /* justify-content: space-evenly; */
 }
 
@@ -570,6 +571,7 @@ div h5 {
 
 #FAQ > div:first-child {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -615,6 +617,10 @@ div h5 {
     display: none;
 }
 
+#contact-box {
+    margin-bottom: 3rem;
+}
+
 /* form Styling */
 
 input, label, button {
@@ -636,6 +642,7 @@ input, label, button {
 
 #form-section > :first-child > div {
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
     align-items: center;
 }
@@ -683,4 +690,59 @@ input, label, button {
     font-size: 1rem;
     color: white;
     border-radius: 5px;
+}
+
+/* footer styling */
+
+footer {
+    background-color: #fbfbfc;
+    padding: 4rem 0;
+}
+
+#mainFooter {
+    display: flex;;
+}
+
+
+#mainFooter   {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3rem 0;
+    /* border: 2px solid red; */
+}
+
+#mainFooter > div {
+    width: 25%;
+}
+
+#mainFooter > div > h4 {
+    margin-bottom: 1rem;
+    color: #215c5c;
+}
+
+#mainFooter > div > p {
+    margin-bottom: 0.5rem;
+    color: #656874;
+}
+
+#newLetter, #newLetterForm {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+#newLetterForm input {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+#newLetterForm button {
+    width: 150px;
+    height: 50px;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: #215c5c;
+    color: white;
 }

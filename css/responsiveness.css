@@ -1,0 +1,14 @@
+/* media query */
+
+@media (max-width: 1087px) {
+
+  header ul {
+        display: none;
+    }
+
+  #hamburger {
+        display: block;
+        font-size: 32px;
+        font-weight: bold;
+    }
+}

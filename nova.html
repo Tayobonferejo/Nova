@@ -4,6 +4,8 @@
         <title>Nova landing page</title>
                      <!-- main css styling -->
         <link rel="stylesheet" href="/css/Nova.css">
+        <!-- responsive css styling -->
+        <link rel="stylesheet" href="/css/responsiveness.css">
 
                     <!-- font Awesome icon -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -12,6 +14,8 @@
     </head>
     <body>
         <header>
+
+            <!-- desktop navigation bar -->
             <nav  class="page-width">
                 <img src="/images/logo-dark.svg">
                 <ul>
@@ -23,8 +27,18 @@
                     <li>Dropdown</li>
                     <li>Contact</li>
                 </ul>
+                <i class="fa-solid fa-bars" id="hamburger"></i>
                 <p class="button"><a href="#">Get Started</a></p>
             </nav>
+             <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Pricing</li>
+                    <li>How It Works</li>
+                    <li>Service</li>
+                    <li>Dropdown</li>
+                    <li>Contact</li>
+             </ul>
         </header>
         <section class="main-section">
             <div class="page-width">
@@ -205,15 +219,15 @@
             <div class="page-width stat-box">
                 <div class="stat">
                     <div>
-                        <h3>10K+</h3>
+                        <h3 id="customer">10K+</h3>
                         <p>Customer Satisfaction</p>
                     </div>
                     <div>
-                        <h3>200%+</h3>
+                        <h3 id="revenue"></h3>
                         <p>Revenue Increase</p>
                     </div>
                     <div>
-                        <h3>20x</h3>
+                        <h3 id="growth">20x</h3>
                         <p>Business Growth</p>
                     </div>
                 </div>
@@ -398,7 +412,7 @@
                                 <p>What services does your web agency offer?</p>
                                 <a href="#" class="faqbutton"><i class="fa-solid fa-plus"></i></a>
                             </div>
-                            <p class="hiddenfaq">Our web agency offers a comprehensive range of services including web design and development, e-commerce solutions, SEO optimization, content 
+                                <p class="hiddenfaq">Our web agency offers a comprehensive range of services including web design and development, e-commerce solutions, SEO optimization, content 
                                 creation, website maintenance, and digital marketing strategies. We tailor our services to meet the unique needs of each client, ensuring a customized approach to every project.
                             </p>
                         </div>
@@ -438,7 +452,7 @@
             </div>
         </section>
         <section>
-            <div class="page-width">
+            <div class="page-width" id="contact-box">
                 <div class="center-headline">
                     <p>FAQ</p>
                     <h3>Frequently Asked Questions</h3>
@@ -492,5 +506,57 @@
                 </div>
             </div>
         </section>
+
+
+        <footer>
+            <div class="page-width">
+                <div id="newLetter">
+                    <div>
+                        <h2>Join our newsletter</h2>
+                        <p>Stay updated with our latest templates and offers—join our newsletter today!</p>
+                    </div>
+                    <div>
+                        <form id="newLetterForm">
+                            <input type="email" id="email" name="email">
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                <div id="mainFooter">
+                    <div>
+                        <h4>About</h4>
+                        <p>Utilize our tools to develop your concepts and bring 
+                            your vision to life. Once complete, effortlessly share your creations.
+                        </p>
+                    </div>
+                    <div>
+                        <h4>Company</h4>
+                        <p>Leadership</p>
+                        <p>Careers</p>
+                        <p>Case Studies</p>
+                        <p>Terms & Conditions</p>
+                        <p>Privacy Policy</p>
+                        <p>404 page</p>
+                    </div>
+                    <div>
+                        <h4>Accounts</h4>
+                        <p>Register</p>
+                        <p>Sign in</p>
+                        <p>Forgot Password</p>
+                        <p>Coming soon</p>
+                        <p>Portfolio Masonry</p>
+                    </div>
+                    <div>
+                        <h4>Contact</h4>
+                        <p>123 Main Street Apt 4B Springfield,IL 62701     
+                            United States</p>
+                        <p>info@mydomain.com</p>
+                        <p>Case Studies</p>
+                        <p>+1 (234) 5678 9900</p>
+                        <p>FreeBootstrap.net</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
